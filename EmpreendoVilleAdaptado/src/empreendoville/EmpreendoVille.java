@@ -124,8 +124,7 @@ public class EmpreendoVille {
                 + "se isso fosse feito, os humanos e os animais seriam iguais na terra de\n"
                 + "EmpreendoVille, se não, os animais mandariam em EmpreendoVille e os humanos\n"
                 + "voltariam a ser escravos dos animais. Para se vencer o jogo seu patrimonio tem\n"
-                + "que ser igual ou maior que 6000.");
-        System.out.println("");
+                + "que ser igual ou maior que 6000.\n");
 
         System.out.println("Pressione qualquer tecla e ENTER para continuar");
         s.next();
@@ -142,12 +141,6 @@ public class EmpreendoVille {
         System.out.println("|================================|");
         System.out.println("|        Criar Personagem        |");
         System.out.println("|================================|");
-        System.out.println("|                                |");
-        System.out.println("|       Tipo Personagem          |");
-        System.out.println("|                                |");
-        System.out.println("|================================|");
-        System.out.println("|1 - Animal                      |");
-        System.out.println("|2 - Humano                      |");
         System.out.println("|================================|");
         System.out.println("|                                |");
         System.out.println("|       Nome Personagem          |");
@@ -155,15 +148,22 @@ public class EmpreendoVille {
         System.out.println("|================================|");
         System.out.print("Informe seu nome: ");
         opcao[0] = s.next();
+        System.out.println("|================================|");
+        System.out.println("|                                |");
+        System.out.println("|       Tipo Personagem          |");
+        System.out.println("|                                |");
+        System.out.println("|================================|");
+        System.out.println("|1 - Animal                      |");
+        System.out.println("|2 - Humano                      |");
+        System.out.println("|================================|");
+        System.out.print("Informe o tipo do personagem: ");
+        opcao[1] = s.next();
 
         if (opcao[0].equals("Bettina")) {
             System.out.println("Olá você já possui 1 milhão e 42 mil de patrimônio acumulado e não precisa de empresas");
             System.out.println("VLW FLW KKKKKKKKKKKK");
             System.exit(0);
         }
-        System.out.println("");
-        System.out.print("Informe o tipo do personagem: ");
-        opcao[1] = s.next();
 
         return opcao;
 
@@ -222,7 +222,7 @@ public class EmpreendoVille {
         System.out.println("");
         System.out.println("Patrimonio: R$ " + patrimonio);
         System.out.println("");
-        System.out.println("Olá " + nomePersonagem + ", sou Falcão do RA (Recursos Animais), pensando em melhorar a produtividade,\n "
+        System.out.println("Olá " + nomePersonagem + ", sou Falcão do RA (Recursos Animais), pensando em melhorar a produtividade,\n"
                 + "tivemos uma ideia no setor de RA de criar Cursos Profissionalizantes \n"
                 + "para nossos funcionários se aperfeiçoarem em sua determinada área.\n"
                 + "\n"
@@ -316,7 +316,7 @@ public class EmpreendoVille {
 
                 } else {
                     System.out.println("Tudo bem chefe obrigado pela atenção!");
-                    System.out.println("Patrimonio: R$" + patrimonio);
+                    System.out.println("Patrimonio: R$ " + patrimonio);
                 }
                 break;
             default:
@@ -377,225 +377,186 @@ public class EmpreendoVille {
         System.out.println("Pressione qualquer tecla e ENTER para continuar");
         s.next();
 
-        System.out.println("");
-        System.out.println("===================================================================================================================================");
-        System.out.println("");
+        do {
 
-        System.out.println("Ola " + nomePersonagem + ", sou a Raposa Dora do departamento de contabilidade, percebemos que você tem gastado muito com fornecedores,\n"
-                + "pensando nisso eu encontrei uma solução para o problema.\n"
-                + "Tive a ideia de trocarmos os produtos naturais por produtos sucintos pois isso reduziria o custo de produção.\n"
-                + "\n"
-                + "Como deseja lidar com a situação?\n"
-                + "\n"
-                + "1)	 Começar a produzir produtos sucintos.\n"
-                + "2)	 Continuar gastando com fornecedores.");
+            System.out.println("");
+            System.out.println("===================================================================================================================================");
+            System.out.println("");
 
-        System.out.print("R: ");
-        resposta = s.nextInt();
-        System.out.println("");
+            System.out.println("Ola " + nomePersonagem + ", sou a Raposa Dora do departamento de contabilidade, percebemos que você tem gastado muito com fornecedores,\n"
+                    + "pensando nisso eu encontrei uma solução para o problema.\n"
+                    + "Tive a ideia de trocarmos os produtos naturais por produtos sucintos pois isso reduziria o custo de produção.\n"
+                    + "\n"
+                    + "Como deseja lidar com a situação?\n"
+                    + "\n"
+                    + "1)	 Começar a produzir produtos sucintos.\n"
+                    + "2)	 Continuar gastando com fornecedores.");
 
-        System.out.println("");
-        System.out.println("===================================================================================================================================");
-        System.out.println("");
+            System.out.print("R: ");
+            resposta = s.nextInt();
+            System.out.println("");
 
-        switch (resposta) {
+            switch (resposta) {
 
-            case 1:
-                System.out.println("CHEFEEEEEEEE!!! Houve uma denúncia de nossos arqui-inimigos (Humanos) negligenciando a qualidade de nossos produtos,\n"
-                        + "e a vigilância sanitária iniciou o processo para investigação do nosso estoque amanhã de manhã.\n "
-                        + "Sabemos que possuímos produtos sintéticos por isso levaremos uma punição severa. \n"
-                        + "\n"
-                        + "E agora como você vai sair dessa?\n"
-                        + "\n"
-                        + "1)	Queimar estoque (Prejuízo de 75%)\n"
-                        + "2)	Receber a punição (Valor indefinido)\n"
-                        + "3)	Vender o estoque (Possível prejuízo/ Possível lucro)");
+                case 1:
 
-                System.out.print("R: ");
-                resposta = s.nextInt();
-                System.out.println("");
+                    do {
+                        System.out.println("");
+                        System.out.println("===================================================================================================================================");
+                        System.out.println("");
 
-                switch (resposta) {
-                    case 1:
-                        patrimonio -= 75 * patrimonio / 100;
-                        System.out.println("\nAo tomar essa decisão você teve um prejuizo de 75%");
+                        System.out.println("CHEFEEEEEEEE!!! Houve uma denúncia de nossos arqui-inimigos (Humanos) negligenciando a qualidade de nossos produtos,\n"
+                                + "e a vigilância sanitária iniciou o processo para investigação do nosso estoque amanhã de manhã.\n "
+                                + "Sabemos que possuímos produtos sintéticos por isso levaremos uma punição severa. \n"
+                                + "\n"
+                                + "E agora como você vai sair dessa?\n"
+                                + "\n"
+                                + "1)	Queimar estoque (Prejuízo de 75%)\n"
+                                + "2)	Receber a punição (Valor indefinido)\n"
+                                + "3)	Vender o estoque (Possível prejuízo/ Possível lucro)");
 
-                        if (patrimonio >= 6000) {
+                        System.out.print("R: ");
+                        resposta = s.nextInt();
+                        System.out.println("");
 
-                            System.out.println("Parabens!!! Mesmo queimando o estoque você conseguiu manter a empresa em boas condições.");
-                            System.out.println("\nPatrimonio: R$" + patrimonio);
+                        switch (resposta) {
+                            case 1:
+                                patrimonio -= 75 * patrimonio / 100;
+                                System.out.println("\nAo tomar essa decisão você teve um prejuizo de 75%");
 
-                            if (admCientifica > admClassica) {
-                                System.out.println("\nSua característica é forte e sua tipo de administração está baseada na administração cientifica");
+                                if (patrimonio >= 6000) {
 
-                            } else {
-                                System.out.println("\nSua característica é forte e sua tipo de administração está baseada na administração classica");
-                            }
-                        } else {
+                                    System.out.println("Parabens!!! Mesmo queimando o estoque você conseguiu manter a empresa em boas condições.");
+                                    System.out.println("\nPatrimonio: R$" + patrimonio);
+                                } else {
 
-                            System.out.println("Poxa vida!!! Infelizmente ao você tomar a decisão de queimar o estoque\n"
-                                    + "a empresa acabou tendo um rombo financeiro muito grande e não conseguiu se manter.");
-                            System.out.println("\nPatrimonio: R$ " + patrimonio);
+                                    System.out.println("Poxa vida!!! Infelizmente ao você tomar a decisão de queimar o estoque\n"
+                                            + "a empresa acabou tendo um rombo financeiro muito grande e não conseguiu se manter.");
+                                    System.out.println("\nPatrimonio: R$ " + patrimonio);
+                                }
 
-                            if (admCientifica > admClassica) {
-                                System.out.println("\nSua característica é forte e sua tipo de administração está baseada na administração cientifica");
+                                verificaAdm();
 
-                            } else {
-                                System.out.println("\nSua característica é forte e sua tipo de administração está baseada na administração classica");
-                            }
+                                break;
+
+                            case 2:
+
+                                patrimonio -= 2000000;
+                                System.out.println("\nAo tomar essa decisão você teve um prejuizo de R$ 2.000.000");
+
+                                if (patrimonio >= 6000) {
+
+                                    System.out.println("Parabens!!! Quem diria, nem eu sabia que era possivel conseguir se manter depois disso.");
+                                    System.out.println("\nPatrimonio: R$ " + patrimonio);
+
+                                } else {
+
+                                    System.out.println("Poxa vida!!! Infelizmente a multa era muito alta e você não tinha o dinheiro suficiente para quitar a divida.");
+                                    System.out.println("\nPatrimonio: R$ " + patrimonio);
+                                }
+                                verificaAdm();
+
+                                break;
+                            case 3:
+                                boolean decisao = r.nextBoolean();
+
+                                if (decisao) {
+                                    patrimonio += r.nextInt(60000);
+
+                                } else {
+                                    patrimonio = 0;
+                                }
+
+                                if (patrimonio >= 6000) {
+
+                                    System.out.println("Parabens!!! Mesmo com o risco de tudo dar errado vocÊ conseguiu contornar a situação e se dar bem.");
+                                    System.out.println("\nPatrimonio: R$ " + patrimonio);
+                                } else {
+
+                                    System.out.println("Poxa vida!!! Infelizmente as coisas não deram certo e você acabou perdendo todo seu patrimonio.");
+                                    System.out.println("\nPatrimonio: R$ " + patrimonio);
+                                }
+                                verificaAdm();
+                                break;
+
+                            default:
+                                System.out.println("\nResposta Invalida!!!");
+
                         }
 
-                        break;
+                    } while (resposta != 1 && resposta != 2 && resposta != 3);
+                    break;
 
-                    case 2:
+                case 2:
 
-                        patrimonio -= 2000000;
-                        System.out.println("\nAo tomar essa decisão você teve um prejuizo de R$ 2.000.000");
+                    do {
 
-                        if (patrimonio >= 6000) {
+                        System.out.println("");
+                        System.out.println("===================================================================================================================================");
+                        System.out.println("");
 
-                            System.out.println("Parabens!!! Quem diria, nem eu sabia que era possivel conseguir se manter depois disso.");
-                            System.out.println("\nPatrimonio: R$ " + patrimonio);
+                        System.out.print("Senhor(a) " + nomePersonagem + " a Nestete está nos precionando para termos resultados e vencer os humanos,\n"
+                                + "porém isso não é possivel se a gente continuar gastando com os fornecedores nós não vamos conseguir fazer isso.\n"
+                                + "\n"
+                                + "E agora como você vai sair dessa?\n"
+                                + "\n"
+                                + "1)	Aumentar a produção fazendo os funcionarios trabalhar 16 horas por dia (grandes chances de processos trabalhistas).\n"
+                                + "2)	Fechar sua empresa e deixar os humanos ganhar."
+                                + "\nR: ");
 
-                            if (admCientifica > admClassica) {
-                                System.out.println("\nSua característica é forte e sua tipo de administração está baseada na administração cientifica");
+                        resposta = s.nextInt();
+                        System.out.println("");
 
-                            } else {
-                                System.out.println("\nSua característica é forte e sua tipo de administração está baseada na administração classica");
-                            }
-                        } else {
+                        switch (resposta) {
+                            case 1:
 
-                            System.out.println("Poxa vida!!! Infelizmente a multa era muito alta e você não tinha o dinheiro suficiente para quitar a divida.");
-                            System.out.println("\nPatrimonio: R$ " + patrimonio);
+                                pontuacao = r.nextInt(20000);
 
-                            if (admCientifica > admClassica) {
-                                System.out.println("\nSua característica é forte e sua tipo de administração está baseada na administração cientifica");
+                                patrimonio -= pontuacao;
+                                System.out.println("Você teve um prjuizo de R$ " + pontuacao + " por conta dos processos recebidos.");
 
-                            } else {
-                                System.out.println("\nSua característica é forte e sua tipo de administração está baseada na administração classica");
-                            }
+                                if (patrimonio >= 6000) {
+
+                                    System.out.println("Parabens!!! Mesmo as multas você conseguiu manter a empresa viva.");
+                                    System.out.println("\nPatrimonio: R$ " + patrimonio);
+                                } else {
+
+                                    System.out.println("Poxa vida!!! Infelizmente as multas se tornaram em um rombo financeiro irreversivel.");
+                                    System.out.println("\nPatrimonio: R$ " + patrimonio);
+                                }
+
+                                verificaAdm();
+
+                                break;
+
+                            case 2:
+
+                                if (patrimonio >= 6000) {
+
+                                    System.out.println("Parabens!!! Você conseguiu cumprir o objetivo de terminar com R$ 6000 de patrimonio, porem você perdeu a guerra contra os humanos.");
+                                    System.out.println("\nPatrimonio: R$ " + patrimonio);
+                                } else {
+
+                                    System.out.println("Poxa vida!!! Você não conseguiu cumprir o objetivo de terminar com R$ 6000 de patrimonio e tambem perdeu a guerra contra os humanos.");
+                                    System.out.println("\nPatrimonio: R$ " + patrimonio);
+                                }
+
+                                verificaAdm();
+
+                                break;
+
+                            default:
+                                System.out.println("\nResposta Invalida!!!");
                         }
 
-                        break;
-                    case 3:
-                        boolean decisao = r.nextBoolean();
+                    } while (resposta != 1 && resposta != 2);
+                    break;
 
-                        if (decisao) {
-                            patrimonio += r.nextInt(60000);
+                default:
+                    System.out.println("Resposta Inválida!!!");
+            }
 
-                        } else {
-                            patrimonio = 0;
-                        }
-
-                        if (patrimonio >= 6000) {
-
-                            System.out.println("Parabens!!! Mesmo com o risco de tudo dar errado vocÊ conseguiu contornar a situação e se dar bem.");
-                            System.out.println("\nPatrimonio: R$ " + patrimonio);
-
-                            if (admCientifica > admClassica) {
-                                System.out.println("\nSua característica é forte e sua tipo de administração está baseada na administração cientifica");
-
-                            } else {
-                                System.out.println("\nSua característica é forte e sua tipo de administração está baseada na administração classica");
-                            }
-                        } else {
-
-                            System.out.println("Poxa vida!!! Infelizmente as coisas não deram certo e você acabou perdendo todo seu patrimonio.");
-                            System.out.println("\nPatrimonio: R$ " + patrimonio);
-
-                            if (admCientifica > admClassica) {
-                                System.out.println("\nSua característica é forte e sua tipo de administração está baseada na administração cientifica");
-
-                            } else {
-                                System.out.println("\nSua característica é forte e sua tipo de administração está baseada na administração classica");
-                            }
-                        }
-
-                        break;
-
-                }
-
-                break;
-
-            case 2:
-
-                System.out.print("Senhor(a) " + nomePersonagem + " a Nestete está nos precionando para termos resultados e vencer os humanos,\n"
-                        + "porém isso não é possivel se a gente continuar gastando com os fornecedores nós não vamos conseguir fazer isso.\n"
-                        + "\n"
-                        + "E agora como você vai sair dessa?\n"
-                        + "\n"
-                        + "1)	Aumentar a produção fazendo os funcionarios trabalhar 16 horas por dia (grandes chances de processos trabalhistas).\n"
-                        + "2)	Fechar sua empresa e deixar os humanos ganhar.\n"
-                        + "\nR: ");
-
-                resposta = s.nextInt();
-                System.out.println("");
-
-                switch (resposta) {
-                    case 1:
-
-                        pontuacao = r.nextInt(20000);
-
-                        patrimonio -= pontuacao;
-                        System.out.println("Você teve um prjuizo de R$ " + pontuacao + " por conta dos processos recebidos.");
-
-                        if (patrimonio >= 6000) {
-
-                            System.out.println("Parabens!!! Mesmo as multas você conseguiu manter a empresa viva.");
-                            System.out.println("\nPatrimonio: R$ " + patrimonio);
-
-                            if (admCientifica > admClassica) {
-                                System.out.println("\nSua característica é forte e sua tipo de administração está baseada na administração cientifica");
-
-                            } else {
-                                System.out.println("\nSua característica é forte e sua tipo de administração está baseada na administração classica");
-                            }
-                        } else {
-
-                            System.out.println("Poxa vida!!! Infelizmente as multas se tornaram em um rombo financeiro irreversivel.");
-                            System.out.println("\nPatrimonio: R$ " + patrimonio);
-
-                            if (admCientifica > admClassica) {
-                                System.out.println("\nSua característica é forte e sua tipo de administração está baseada na administração cientifica");
-
-                            } else {
-                                System.out.println("\nSua característica é forte e sua tipo de administração está baseada na administração classica");
-                            }
-                        }
-
-                        break;
-
-                    case 2:
-
-                        if (patrimonio >= 6000) {
-
-                            System.out.println("Parabens!!! Você conseguiu cumprir o objetivo de terminar com R$ 6000 de patrimonio, porem você perdeu a guerra contra os humanos.");
-                            System.out.println("\nPatrimonio: R$ " + patrimonio);
-
-                            if (admCientifica > admClassica) {
-                                System.out.println("\nSua característica é forte e sua tipo de administração está baseada na administração cientifica");
-
-                            } else {
-                                System.out.println("\nSua característica é forte e sua tipo de administração está baseada na administração classica");
-                            }
-                        } else {
-
-                            System.out.println("Poxa vida!!! Você não conseguiu cumprir o objetivo de terminar com R$ 6000 de patrimonio e tambem perdeu a guerra contra os humanos.");
-                            System.out.println("\nPatrimonio: R$ " + patrimonio);
-
-                            if (admCientifica > admClassica) {
-                                System.out.println("\nSua característica é forte e sua tipo de administração está baseada na administração cientifica");
-
-                            } else {
-                                System.out.println("\nSua característica é forte e sua tipo de administração está baseada na administração classica");
-                            }
-                        }
-
-                        break;
-
-                }
-                break;
-        }
+        } while (resposta != 1 && resposta != 2);
 
         gravarCsv(nomePersonagem, patrimonio);
 
@@ -606,7 +567,7 @@ public class EmpreendoVille {
         int patrimonio = 10000;
 
         System.out.println("");
-        System.out.println("Olá " + nomePersonagem + " sou Matheus, gerente de RH. O Daniel que trabalha na manutenção, está tendo problemas com depêndencias quimicas.\n "
+        System.out.println("Olá " + nomePersonagem + " sou Matheus, gerente de RH. O Daniel que trabalha na manutenção, está tendo problemas com depêndencias quimicas.\n"
                 + "Por conta de um térmido de relacionamento. Por conta disso seu rendimento caiu desde então. Como deseja lidar com a situação?");
         System.out.println("");
         System.out.println("1) Conversar pessoalmente com o Daniel");
@@ -640,9 +601,9 @@ public class EmpreendoVille {
 
         System.out.println("");
         System.out.println("Olá " + nomePersonagem + " Sou Micaella do setor de finanças, o banco acabou de ligar e você precisa"
-                + "\n ir lá urgentemente resolver um problema!!! Entretanto tem uma operação menos importante ocorrendo em outro"
-                + "\n setor e você precisa resolver tambem"
-                + "\n O que deseja fazer?");
+                + "\nir lá urgentemente resolver um problema!!! Entretanto tem uma operação menos importante ocorrendo em outro"
+                + "\nsetor e você precisa resolver tambem."
+                + "\nO que deseja fazer?");
         System.out.println("");
         System.out.println("1) Ir para o imprevisto do banco e deixar a finalização da outra operação nas mãos de um estagiario.");
         System.out.println("2) Escolher resolver a operação e adiar o imprevisto do banco.");
@@ -677,7 +638,7 @@ public class EmpreendoVille {
         System.out.println("");
 
         System.out.println("");
-        System.out.println("Chefe, precisamos urgente de fazer melhoras no setor de produção, mas não temos boas ideais de como fazer isso.\n"
+        System.out.println("Chefe, precisamos urgente de fazer melhoras no setor de produção, mas não temos boas ideias de como fazer isso.\n"
                 + "Está na hora de você tomar a decisão final!");
         System.out.println("");
         System.out.println("1) Buscar metodos na internet testados e outras empresas");
@@ -766,180 +727,138 @@ public class EmpreendoVille {
 
         System.out.println("Pressione qualquer tecla e ENTER para continuar");
         s.next();
-        System.out.println("");
-        System.out.println("===================================================================================================================================");
-        System.out.println("");
-        System.out.println("Patrimonio: R$ " + patrimonio);
-        System.out.println("");
 
-        System.out.println("");
-        System.out.println("Chefe um dos funcionarios da empresa dos animais vazou uma informação para nós.\n"
-                + "E  essa informação era que eles estão fazendo produtos 100% artificiais,\n"
-                + " essa informação é muito grave e cabe a você decidir oque fazer.");
-        System.out.println("");
-        System.out.println("1) Denunciar a empresa dos animais a vigilancia sanitaria.");
-        System.out.println("2) Usar informação para chantagem (50% de chance de dar certo).");
-        System.out.println("3) Expor para a midia com o risco de ter prejuizo.");
-        System.out.print("R:");
-        resposta = s.nextInt();
+        do {
+            System.out.println("");
+            System.out.println("===================================================================================================================================");
+            System.out.println("");
+            System.out.println("Patrimonio: R$ " + patrimonio);
+            System.out.println("");
 
-        switch (resposta) {
+            System.out.println("");
+            System.out.println("Chefe um dos funcionarios da empresa dos animais vazou uma informação para nós.\n"
+                    + "E essa informação era que eles estão fazendo produtos 100% artificiais,\n"
+                    + "essa informação é muito grave e cabe a você decidir oque fazer.");
+            System.out.println("");
+            System.out.println("1) Denunciar a empresa dos animais a vigilancia sanitaria.");
+            System.out.println("2) Usar informação para chantagem (50% de chance de dar certo).");
+            System.out.println("3) Expor para a midia com o risco de ter prejuizo.");
+            System.out.print("R: ");
+            resposta = s.nextInt();
 
-            case 1:
-                if (patrimonio >= 6000) {
+            switch (resposta) {
 
-                    System.out.println("Parabens!!! Você fez o certo e conseguiu manter a empresa viva, "
-                            + "\n com isso você venceu a guerra.");
-                    System.out.println("\nPatrimonio: R$ " + patrimonio);
-
-                    if (admCientifica > admClassica) {
-                        System.out.println("\nSua característica é forte e sua tipo de administração está baseada na administração cientifica");
-
-                    } else {
-                        System.out.println("\nSua característica é forte e sua tipo de administração está baseada na administração classica");
-                    }
-                } else {
-
-                    System.out.println("Parabens!!! Você fez o certo, mas nem sempre o certo te traz lucro, "
-                            + "\ne por conta disso sua empresa não sobreviveu e os animais venceram a guerra.");
-                    System.out.println("\nPatrimonio: R$ " + patrimonio);
-
-                    if (admCientifica > admClassica) {
-                        System.out.println("\nSua característica é forte e sua tipo de administração está baseada na administração cientifica");
-
-                    } else {
-                        System.out.println("\nSua característica é forte e sua tipo de administração está baseada na administração classica");
-                    }
-                }
-
-                break;
-
-            case 2:
-                boolean fim = r.nextBoolean();
-
-                if (fim) {
-
-                    patrimonio += r.nextInt(6000);
-                    if (patrimonio >= 6000) {
-                        System.out.println("Parabens você conseguiu manter sua empresa viva, "
-                                + "\nmesmo utilizando essa estrategia suja.");
-                        System.out.println("Patrimonio:" + patrimonio);
-
-                        if (admCientifica > admClassica) {
-                            System.out.println("\nSua característica é forte e sua tipo de administração está baseada na administração cientifica");
-
-                        } else {
-                            System.out.println("\nSua característica é forte e sua tipo de administração está baseada na administração classica");
-                        }
-                    } else {
-                        System.out.println("Poxa vida nem usando jogo sujo você consegue ganhar.");
-                        System.out.println("\nPatrimonio: R$ " + patrimonio);
-
-                        if (admCientifica > admClassica) {
-                            System.out.println("\nSua característica é forte e sua tipo de administração está baseada na administração cientifica");
-
-                        } else {
-                            System.out.println("\nSua característica é forte e sua tipo de administração está baseada na administração classica");
-                        }
-                    }
-
-                } else {
-                    patrimonio = 0;
-
-                    System.out.println("Os animais não se renderam a sua chantagem e te denunciou para a policia federal."
-                            + "\nA policia te prendeu e confiscou todo a patrimonio da sua empresa.");
-                    System.out.println("\nPatrimonio: R$ " + patrimonio);
-
-                    if (admCientifica > admClassica) {
-                        System.out.println("\nSua característica é forte e sua tipo de administração está baseada na administração cientifica");
-
-                    } else {
-                        System.out.println("\nSua característica é forte e sua tipo de administração está baseada na administração classica");
-                    }
-                }
-
-                break;
-
-            case 3:
-
-                fim = r.nextBoolean();
-
-                if (fim) {
+                case 1:
                     if (patrimonio >= 6000) {
 
-                        System.out.println("Parabens você expos a informação de forma sigilosa na imprensa, "
-                                + "\ne conseguiu manter a sua empresa viva.");
+                        System.out.println("\nParabens!!! Você fez o certo e conseguiu manter a empresa viva, "
+                                + "\n com isso você venceu a guerra.");
                         System.out.println("\nPatrimonio: R$ " + patrimonio);
+                    } else {
 
-                        if (admCientifica > admClassica) {
-                            System.out.println("\nSua característica é forte e sua tipo de administração está baseada na administração cientifica");
+                        System.out.println("\nParabens!!! Você fez o certo, mas nem sempre o certo te traz lucro, "
+                                + "\ne por conta disso sua empresa não sobreviveu e os animais venceram a guerra.");
+                        System.out.println("\nPatrimonio: R$ " + patrimonio);
+                    }
+
+                    verificaAdm();
+                    break;
+
+                case 2:
+                    boolean fim = r.nextBoolean();
+
+                    if (fim) {
+
+                        patrimonio += r.nextInt(6000);
+                        if (patrimonio >= 6000) {
+                            System.out.println("\nParabens!!! você conseguiu manter sua empresa viva, "
+                                    + "\nmesmo utilizando essa estrategia suja.");
+                            System.out.println("\nPatrimonio: R$ " + patrimonio);
+                        } else {
+                            System.out.println("\nPoxa vida!!! nem usando jogo sujo você consegue ganhar.");
+                            System.out.println("\nPatrimonio: R$ " + patrimonio);
+                        }
+
+                    } else {
+                        patrimonio = 0;
+
+                        System.out.println("\nOs animais não se renderam a sua chantagem e te denunciou para a policia federal."
+                                + "\nA policia te prendeu e confiscou todo a patrimonio da sua empresa.");
+                        System.out.println("\nPatrimonio: R$ " + patrimonio);
+                    }
+
+                    verificaAdm();
+
+                    break;
+
+                case 3:
+
+                    fim = r.nextBoolean();
+
+                    if (fim) {
+                        if (patrimonio >= 6000) {
+
+                            System.out.println("\nParabens!!! você expos a informação de forma sigilosa na imprensa, "
+                                    + "\ne conseguiu manter a sua empresa viva.");
+                            System.out.println("\nPatrimonio: R$ " + patrimonio);
 
                         } else {
-                            System.out.println("\nSua característica é forte e sua tipo de administração está baseada na administração classica");
+                            System.out.println("\nPoxa vida!!! você expos a informação de forma sigilosa na imprensa, "
+                                    + "\nporem não conseguiu manter a sua empresa viva.");
+                            System.out.println("\nPatrimonio: R$ " + patrimonio);
                         }
                     } else {
-                        System.out.println("Poxa vida você expos a informação de forma sigilosa na imprensa, "
-                                + "\nporem não conseguiu manter a sua empresa viva.");
-                        System.out.println("\nPatrimonio: R$ " + patrimonio);
+                        patrimonio -= r.nextInt(6000);
 
-                        if (admCientifica > admClassica) {
-                            System.out.println("\nSua característica é forte e sua tipo de administração está baseada na administração cientifica");
+                        if (patrimonio >= 6000) {
 
+                            System.out.println("\nPutz!!! você foi exposto pelo jornalista e isso não é uma boa noticia, "
+                                    + "\na sua empresa teve prejuizo, porém você conseguiu manter a empresa viva.");
+                            System.out.println("\nPatrimonio: R$ " + patrimonio);
                         } else {
-                            System.out.println("\nSua característica é forte e sua tipo de administração está baseada na administração classica");
+                            System.out.println("\nPutz!!! você foi exposto pelo jornalista e isso não é uma boa noticia, "
+                                    + "\na sua empresa teve prejuizo muito alto, e você não conseguiu manter a empresa viva.");
+                            System.out.println("\nPatrimonio: R$ " + patrimonio);
                         }
                     }
-                } else {
-                    patrimonio -= r.nextInt(6000);
 
-                    if (patrimonio >= 6000) {
+                    verificaAdm();
 
-                        System.out.println("Putz você foi exposto pelo jornalista e isso não é uma boa noticia, "
-                                + "\na sua empresa teve prejuizo, porém você conseguiu manter a empresa viva.");
-                        System.out.println("\nPatrimonio: R$ " + patrimonio);
+                    break;
 
-                        if (admCientifica > admClassica) {
-                            System.out.println("\nSua característica é forte e sua tipo de administração está baseada na administração cientifica");
-
-                        } else {
-                            System.out.println("\nSua característica é forte e sua tipo de administração está baseada na administração classica");
-                        }
-                    } else {
-                        System.out.println("Putz você foi exposto pelo jornalista e isso não é uma boa noticia, "
-                                + "\na sua empresa teve prejuizo muito alto, e você não conseguiu manter a empresa viva.");
-                        System.out.println("\nPatrimonio: R$ " + patrimonio);
-
-                        if (admCientifica > admClassica) {
-                            System.out.println("\nSua característica é forte e sua tipo de administração está baseada na administração cientifica");
-
-                        } else {
-                            System.out.println("\nSua característica é forte e sua tipo de administração está baseada na administração classica");
-                        }
-                    }
-                }
-
-                break;
-        }
-
+                default:
+                    System.out.println("\nResposta Invalida!!!");
+            }
+        } while (resposta != 1 && resposta != 2 && resposta != 3);
         gravarCsv(nomePersonagem, patrimonio);
+    }
+
+    public static void verificaAdm() {
+        if (admCientifica > admClassica) {
+            System.out.println("\nSua característica é forte e seu tipo de administração está baseada na administração cientifica");
+
+        } else if (admCientifica < admClassica) {
+            System.out.println("\nSua característica é forte e seu tipo de administração está baseada na administração classica");
+        } else {
+            System.out.println("\nNão foi possivel identificar seu estilo de administração");
+        }
     }
 
     public static void gravarCsv(String nomePersonagem, int patrimonio) {
 
         try {
-            
             String tipo = "";
-            
-            if(tipoPersonagem == 1){
+
+            if (tipoPersonagem == 1) {
                 tipo = "Animal";
-            }else{
+            } else {
                 tipo = "Humano";
             }
-            
+
             BufferedWriter writer = new BufferedWriter(new FileWriter("Pontuacoes.csv", true));
-            
+
             writer.newLine();
-            
+
             writer.append(nomePersonagem + ";" + patrimonio + ";" + tipo);
             writer.flush();
             writer.close();
@@ -974,7 +893,7 @@ public class EmpreendoVille {
 
             for (int j = 1; j < vetor.length; j++) {
                 if (vetor[j] != null) {
-                    vetor[j] = vetor[j].replaceAll(";", ", ");
+                    vetor[j] = vetor[j].replaceAll(";", "/");
                 }
             }
 
@@ -985,7 +904,7 @@ public class EmpreendoVille {
                     System.out.println(vetor[i]);
                 }
             }
-        } catch (Exception e) {
+        } catch (IOException e) {
             System.out.println("Não foi possivel ler o arquivo");
         }
 
